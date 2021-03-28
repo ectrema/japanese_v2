@@ -1,16 +1,24 @@
 import 'package:get/get.dart';
-import 'package:japanese_v2/presentation/views/home/home_bindings.dart' as mobile;
-import 'package:japanese_v2/presentation/views/home/home_view.dart' as mobile;
+import 'export_routes.dart' as mobile;
 
 import 'routes.dart';
 
 class Nav {
   static List<GetPage> routes = [
     GetPage(
+      name: Routes.APP,
+      page: () => mobile.AppView(),
+      binding: mobile.AppViewControllerBindings(),
+    ),
+    GetPage(
       name: Routes.HOME,
       page: () => mobile.HomeView(),
-      binding:
-          mobile.HomeControllerBinding(),
+      binding: mobile.HomeViewControllerBindings(),
     ),
+    GetPage(
+      name: Routes.LESSON,
+      page: () => mobile.LessonView(),
+      binding: mobile.LessonViewControllerBindings(),
+    )
   ];
 }

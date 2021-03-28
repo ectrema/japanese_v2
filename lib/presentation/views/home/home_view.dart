@@ -1,41 +1,41 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:japanese_v2/presentation/core/widget/space_red_widget.dart';
+import '../../navigation/export_routes.dart';
 
-import 'home_controller.dart';
-
-class HomeView extends GetView<HomeController> {
+class HomeView extends GetView<HomeViewController> {
   HomeView({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: Text(
-        controller.name.value,
-      )),
-      body: controller.content,
-      bottomSheet: SpaceRedWidget(
-        context: context,
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: controller.index.value,
-        iconSize: 30,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Acceuil",
+    return SafeArea(
+      child: Column(
+        children: [
+          SpaceRedWidget(
+            context: Get.context,
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.layers),
-            label: "Cours",
+          Container(
+            height: MediaQuery.of(Get.context).size.height / 3,
+            alignment: Alignment.bottomCenter,
+            child: Text(
+              'Bienvenue',
+              style: Theme.of(Get.context).textTheme.bodyText2.copyWith(
+                    fontSize: 50,
+                  ),
+            ),
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.rate_review),
-            label: "Révision",
+          Expanded(
+            child: Container(
+              alignment: Alignment.topCenter,
+              child: Text(
+                'ようそこ',
+                style: Theme.of(Get.context).textTheme.bodyText2.copyWith(
+                      fontSize: 50,
+                    ),
+              ),
+            ),
           ),
         ],
-        onTap: controller.onTapNaviBar,
       ),
     );
   }

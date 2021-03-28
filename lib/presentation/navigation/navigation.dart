@@ -19,6 +19,11 @@ class Nav {
       name: Routes.LESSON,
       page: () => mobile.LessonView(),
       binding: mobile.LessonViewControllerBindings(),
-    )
+    ),
+    GetPage(
+      name: Routes.REVISION,
+      page: () => mobile.LessonView(),
+      binding: mobile.LessonViewControllerBindings(),
+    ),
   ];
 }

@@ -38,6 +38,14 @@ class AppView extends GetView<AppViewController> {
                 transitionDuration: Duration(microseconds: 0),
               );
               break;
+              case Routes.REVISION:
+              return GetPageRoute(
+                page: () => RevisionView(),
+                binding: RevisionViewControllerBindings(),
+                routeName: Routes.REVISION,
+                transitionDuration: Duration(microseconds: 0),
+              );
+              break;
             default:
               return GetPageRoute();
           }

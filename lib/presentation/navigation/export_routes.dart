@@ -12,3 +12,8 @@ export 'package:japanese_v2/presentation/views/home/home_view.dart';
 export 'package:japanese_v2/presentation/views/lesson/lesson_view_controller_bindings.dart';
 export 'package:japanese_v2/presentation/views/lesson/lesson_view_controller.dart';
 export 'package:japanese_v2/presentation/views/lesson/lesson_view.dart';
+
+/* Revision */
+export 'package:japanese_v2/presentation/views/revision/revision_view_controller_bindings.dart';
+export 'package:japanese_v2/presentation/views/revision/revision_view_controller.dart';
+export 'package:japanese_v2/presentation/views/revision/revision_view.dart';

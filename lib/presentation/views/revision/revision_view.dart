@@ -1,22 +1,22 @@
-import 'lesson_view_controller.dart';
 import 'package:get/get.dart';
+import 'revision_view_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:japanese_v2/presentation/core/widget/space_red_widget.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-class LessonView extends GetView<LessonViewController> {
-  LessonView({Key key}): super(key: key);
-
+class RevisionView extends GetView<RevisionViewController> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        SpaceRedWidget(
-          context: context,
-        ),
-        _buildAlphabet(),
-        _buildMot(),
-      ],
+    return Scaffold(
+      body: Column(
+        children: <Widget>[
+          SpaceRedWidget(
+            context: context,
+          ),
+          _buildAlphabet(),
+          _buildMot(),
+        ],
+      ),
     );
   }
 
@@ -49,8 +49,7 @@ class LessonView extends GetView<LessonViewController> {
           margin: const EdgeInsets.only(top: 15),
           width: 310,
           child: GestureDetector(
-            // onTap: () => Modular.to
-            //     .pushNamed(KanaModule.route, arguments: ["Hiragana"]),
+            // onTap: () => Modular.to.pushNamed(RevisionKanaModule.route, arguments: ["hiragana"]),
             child: Row(
               children: [
                 Padding(
@@ -69,22 +68,18 @@ class LessonView extends GetView<LessonViewController> {
         Container(
           margin: EdgeInsets.only(top: 10),
           width: 310,
-          child: GestureDetector(
-            // onTap: () => Modular.to
-            //     .pushNamed(KanaModule.route, arguments: ["Katakana"]),
-            child: Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(right: 8.0),
-                  child: const Icon(
-                    MdiIcons.subdirectoryArrowRight,
-                  ),
+          child: Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0),
+                child: const Icon(
+                  MdiIcons.subdirectoryArrowRight,
                 ),
-                Text(
-                  "Les Katakanas",
-                ),
-              ],
-            ),
+              ),
+              Text(
+                "Les Katakanas",
+              ),
+            ],
           ),
         ),
       ],
@@ -120,7 +115,7 @@ class LessonView extends GetView<LessonViewController> {
           margin: const EdgeInsets.only(top: 15),
           width: 310,
           child: GestureDetector(
-            // onTap: () => Modular.to.pushNamed(KanjiModule.route),
+            // onTap: () => Modular.to.pushNamed(RevisionKanjiModule.route),
             child: Row(
               children: [
                 Padding(

@@ -5,4 +5,5 @@ class Routes {
     static const APP = '/app';
     static const HOME = '/home';
     static const LESSON = '/lesson';
+    static const REVISION = '/revision';
 }

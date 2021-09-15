@@ -1,4 +1,4 @@
-import 'package:japanese_v2/domain/features/jlpt.dart';
+import '../../domain/features/jlpt.dart';
 
 class KanjiN5 {
   static List<Jlpt> jlptN5Revision = [

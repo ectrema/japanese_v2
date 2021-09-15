@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:japanese_v2/presentation/core/widget/space_red_widget.dart';
+import '../../core/widget/space_red_widget.dart';
 import '../../navigation/export_routes.dart';
 
 class HomeView extends GetView<HomeViewController> {

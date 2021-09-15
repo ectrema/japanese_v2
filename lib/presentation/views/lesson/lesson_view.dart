@@ -1,7 +1,7 @@
+import '../../core/widget/space_red_widget.dart';
 import 'lesson_view_controller.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-import 'package:japanese_v2/presentation/core/widget/space_red_widget.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class LessonView extends GetView<LessonViewController> {

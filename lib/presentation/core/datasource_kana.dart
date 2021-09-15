@@ -1,4 +1,4 @@
-import 'package:japanese_v2/domain/features/kana.dart';
+import '../../domain/features/kana.dart';
 
 class DataSourceKana {
   Map<int, List<Kana>> initHiragana() {

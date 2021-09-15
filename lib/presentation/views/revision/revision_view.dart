@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
+import '../../core/widget/space_red_widget.dart';
 import 'revision_view_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:japanese_v2/presentation/core/widget/space_red_widget.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class RevisionView extends GetView<RevisionViewController> {
